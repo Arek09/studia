@@ -1,0 +1,51 @@
+{
+    "name": "pacerit/laravel-polish-validation-rules",
+    "description": "Simple Polish Validation rules for Laravel and Lumen framework",
+    "type": "library",
+    "keywords": [
+        "pacerit",
+        "laravel",
+        "validation",
+        "polish",
+        "PESEL",
+        "REGON"
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "orchestra/testbench": "^7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wiktor Pacer",
+            "email": "kontakt@pacerit.pl",
+            "role": "Developer",
+            "homepage": "https://pacerit.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PacerIT\\LaravelPolishValidationRules\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PacerIT\\LaravelPolishValidationRules\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PacerIT\\LaravelPolishValidationRules\\Providers\\LaravelPolishValidationRulesServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
