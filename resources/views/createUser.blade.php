@@ -43,21 +43,17 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                                   placeholder="Pseudonim"  name="surname" value="">
+                                                   placeholder="Nazwisko"  name="surname" value="">
                                             <span class="text-danger">@error('surname') {{$message}} @enderror</span>
                                         </div>
                                     </div>
                                         <div class="form-group row">
                                             <div class="col-sm-6 mb-3 mb-sm-0">
-                                                <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                                       placeholder="Stopień" name="name" value="">
+                                                <input type="number" class="form-control form-control-user" id="exampleFirstName"
+                                                       placeholder="Wiek" name="year" value="">
                                                 <span class="text-danger">@error('name') {{$message}} @enderror</span>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                                       placeholder="Nazwisko"  name="surname" value="{{old('surname')}}">
-                                                <span class="text-danger">@error('surname') {{$message}} @enderror</span>
-                                            </div>
+                                          
                                         </div>
                                     <div class="form-group">
                                         <input type="email" class="form-control form-control-user" id="exampleInputEmail"

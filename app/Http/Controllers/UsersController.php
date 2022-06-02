@@ -47,6 +47,7 @@ class UsersController extends Controller
         $request->validate([
             'name'=>'required',
             'surname'=>'required',
+            'year'=>'required',
             'email'=>'required|email|unique:users',
             'password'=> 'required|confirmed|min:8',
 
@@ -55,6 +56,7 @@ class UsersController extends Controller
         $user = new User();
         $user->name = $request->name;
         $user->surname = $request->surname;
+        $user->year = $request->year;
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
         $user->save();
@@ -115,6 +117,7 @@ class UsersController extends Controller
         $user =  User::find($id);
         $user->name = $request->input('name');
         $user->surname = $request->input('surname');
+        $user->year = $request->input('year');
         $user->email = $request->input('email');
         $user->rank_id = $request->input('rankName');
         if($request->hasfile('image'))

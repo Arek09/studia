@@ -29,15 +29,14 @@
                                 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
                             @endif
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <table class="table table-bordered" id="" width="100%" cellspacing="0">
 
                                     <thead>
                                     <tr>
                                         <th>Lp</th>
                                         <th>Imię</th>
                                         <th>Nazwisko</th>
-                                        <th>Pseudonim</th>
-                                        <th>Stopień</th>
+                                        <th>Wiek</th>
                                         <th>Rola użytkownika</th>
                                         <th>Zdjęcie</th>
                                         <th>Akcja</th>
@@ -48,8 +47,7 @@
                                         <th>Lp</th>
                                         <th>Imię</th>
                                         <th>Nazwisko</th>
-                                        <th>Pseudonim</th>
-                                        <th>Stopień</th>
+                                        <th>Wiek</th>
                                         <th>Rola użytkownika</th>
                                         <th>Zdjęcie</th>
                                         <th>Akcja</th>
@@ -62,15 +60,15 @@
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{ $user->name }}</td>
                                             <td>{{ $user->surname }}</td>
-                                            <td></td>
+                                            <td>{{ $user->year }}</td>
                                             <td>
                                              @if($user->rank_id==null)
-                                                -- Brak stopnia --
+                                                -- Brak Roli --
                                             @else
                                                 {{ $user->rank->rankName }}
                                             @endif                           
                                             </td>
-                                                <td></td>
+                                             
                                             <td><img width="200px" src="uploads/images/{{ $user->image }}"/>
                                             <td>
                                                 <a href="{{ url('users/'.$user->id) }}" class="btn btn-info btn-circle">

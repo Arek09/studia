@@ -1,4 +1,6 @@
 @extends('layouts.app')
+
+
 @section('content')
 
     <div id="wrapper">
@@ -23,38 +25,43 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <table class="table table-bordered" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Numer broni</th>
+                                            <th>Lp.</th>
+                                            <th>Symbol</th>
                                             <th>Nazwa</th>
-                                            <th>Typ/Model</th>
-                                            <th>Magazynki</th>
-                                            <th>ASG/Deko</th>
-                                            <th>Zdjęcie</th>
+                                            <th>j.m.</th>
+                                            <th>Ilość</th>
+                                            <th>Cena</th>
+                                            <th>Razem</th>
+                                            <th>Zdjęcie poglądowe</th>
                                             <th>Akcja</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                        <th>Numer broni</th>
+                                            <th>Lp.</th>
+                                            <th>Symbol</th>
                                             <th>Nazwa</th>
-                                            <th>Typ/Model</th>
-                                            <th>Magazynki</th>
-                                            <th>ASG/Deko</th>
-                                            <th>Zdjęcie</th>
+                                            <th>j.m.</th>
+                                            <th>Ilość</th>
+                                            <th>Cena</th>
+                                            <th>Razem</th>
+                                            <th>Zdjęcie poglądowe</th>
                                             <th>Akcja</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                     @foreach($producs as $produc)
                                         <tr>
-
+                                            <td>{{ $loop->iteration }}</td>
                                             <td>{{$produc['weapon_number']}}</td>
                                             <td>{{$produc['weapon_name']}}</td>
                                             <td>{{$produc['type_weapon']}}</td>
                                             <td>{{$produc['weapon_mag']}}</td>
                                             <td>{{$produc['weapon_asg_dek']}}</td>
+                                            <td>{{ $produc['weapon_mag']*$produc['weapon_asg_dek'] }} zł</td>
                                             <td><img width="200px" src="uploads/images/{{$produc['image']}}"></td>
                                             <td>
                                             <a href="{{ url('edit/'.$produc->id) }}" class="btn btn-info btn-circle">

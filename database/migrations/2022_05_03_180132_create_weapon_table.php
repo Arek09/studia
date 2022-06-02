@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('weapon_name');
             $table->string('type_weapon');
             $table->integer('weapon_mag');
-            $table->string('weapon_asg_dek');
+            $table->integer('weapon_asg_dek');
             $table->string('image',300);
             $table->timestamps();
         });

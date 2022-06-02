@@ -16,30 +16,11 @@ class RankTableSeeder extends Seeder
     public function run()
     {
         DB::table('rank')->insert([
-            ['rankName' => 'Szeregowy'],
-            ['rankName' => 'Starszy szeregowy'],
-            ['rankName' => 'Kapral'],
-            ['rankName' => 'Starszy kapral'],
-            ['rankName' => 'Plutonowy'],
-            ['rankName' => 'Starszy plutonowy'],
-            ['rankName' => 'Sierżant'],
-            ['rankName' => 'Starszy sierżant'],
-            ['rankName' => 'Sierżant sztabowy'],
-            ['rankName' => 'Starszy sierżant sztabowy'],
-            ['rankName' => 'Młodszy chorąży'],
-            ['rankName' => 'Chorąży'],
-            ['rankName' => 'Starszy chorąży'],
-            ['rankName' => 'Starszy chorąży sztabowy'],
-            ['rankName' => 'Młodszy Chorąży sztabowy'],
-            ['rankName' => 'Chorąży sztabowy'],
-            ['rankName' => 'Starszy Chorąży sztabowy'],
-            ['rankName' => 'Podporucznik'],
-            ['rankName' => 'Porucznik'],
-            ['rankName' => 'Kapitan'],
-            ['rankName' => 'Major'],
-            ['rankName' => 'Podpułkownik'],
-            ['rankName' => 'Pułkownik'],
-            ['rankName' => 'Generał brygady'],
+            ['rankName' => 'Admin'],
+            ['rankName' => 'Magazynier'],
+            ['rankName' => 'Użytkownik'],
+            ['rankName' => 'Serwisant'],
+           
         ]);
     }
 }

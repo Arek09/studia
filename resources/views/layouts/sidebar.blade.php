@@ -106,20 +106,20 @@
 <li class="nav-item {{ 'table' == request()->path() ? 'active' : '' }}">
     <a class="nav-link" href="/table">
         <i class="fas fa-fw fa-table"></i>
-        <span>Tabele</span></a>
+        <span>Produkty</span></a>
 </li>
 
-<li class="nav-item {{ 'users' == request()->path() ? 'active' : '' }}">
-     <a class="nav-link" href="/users">
-         <i class="fa-solid fa-users"></i>
-         <span>Użytkownicy</span></a>
-</li>
+
 <li class="nav-item {{ 'category' == request()->path() ? 'active' : '' }}">
     <a class="nav-link" href="/category">
         <i class="fa-solid fa-users"></i>
         <span>Kategorie</span></a>
 </li>
-
+<li class="nav-item {{ 'users' == request()->path() ? 'active' : '' }}">
+    <a class="nav-link" href="/users">
+        <i class="fa-solid fa-users"></i>
+        <span>Użytkownicy</span></a>
+</li>
      <!-- Divider -->
 <hr class="sidebar-divider d-none d-md-block">
 

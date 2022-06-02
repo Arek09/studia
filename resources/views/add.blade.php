@@ -34,22 +34,22 @@
                    
                 <div class="row mt-2">
                     
-                    <div class="col-md-6"><label class="labels">Numer Broni</label><input required type="text" class="form-control" placeholder="weapon_number" value="" name="weapon_number"></div>
+                    <div class="col-md-6"><label class="labels">Symbol</label><input required type="text" class="form-control" placeholder="" value="" name="weapon_number"></div>
 
-                    <div class="col-md-6"><label class="labels">Nazwa</label><input type="text" required class="form-control" value="" placeholder="weapon_name" name="weapon_name"></div>
+                    <div class="col-md-6"><label class="labels">Nazwa</label><input type="text" required class="form-control" value="" placeholder="" name="weapon_name"></div>
 
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Typ/Model</label><input type="text" required class="form-control" placeholder="type_weapon" value="" name="type_weapon"></div>
+                    <div class="col-md-12"><label class="labels">j.m.</label><input type="text" required class="form-control" placeholder="" value="" name="type_weapon"></div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Magazynki</label><input type="number" required class="form-control" placeholder="Magazynki" value="Magazynki" name="weapon_mag"></div>
+                    <div class="col-md-12"><label class="labels">Ilość</label><input type="number" required class="form-control" placeholder="" value="Magazynki" name="weapon_mag"></div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">ASG/Deko</label><input type="text" required class="form-control" placeholder="ASG/Deko" value="" name="weapon_asg_dek"></div>
+                    <div class="col-md-12"><label class="labels">Cena</label><input type="number" required class="form-control" placeholder="" value="" name="weapon_asg_dek"></div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Zdjęcie</label><input type="file" required class="form-control" placeholder="e-mail" value="" name="image"></div>
+                    <div class="col-md-12"><label class="labels">Zdjęcie</label><input type="file" required class="form-control" placeholder="" value="" name="image"></div>
                 </div>
                 <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Dodaj broń</button>
                 </form></div>

@@ -38,19 +38,19 @@
 
                     <div class="col-md-6"><label class="labels">Imię</label><input type="text" class="form-control" placeholder="first name" value="{{ $user->name }}" name="name"></div>
                     <div class="col-md-6"><label class="labels">Nazwisko</label><input type="text" class="form-control" value="{{ $user->surname }}" placeholder="surname" name="surname"></div>
+                    <br>
+                    <div class="col-md-6"><label class="labels">Wiek</label><input type="number" class="form-control" value="{{ $user->year }}" placeholder="Wiek" name="year"></div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-md-12"><label class="labels">Adres e-mail</label><input type="text" class="form-control" placeholder="e-mail" value="{{ $user->email }}" name="email"></div>
                 </div>
-                    <div class="row mt-3">
-                        <div class="col-md-12"><label class="labels">Pseudonim</label><input type="text" class="form-control" placeholder="e-mail" value="" name="pseudonim"></div>
-                    </div>
+                   <br>
                     <div class="form-group">
-      <label for="input-country">Stopień</label>
+      <label for="input-country">Role</label>
 
   
       <select class="form-control custom-select d-block w-100" name="rankName" id="input-country">
-        <option>-- Wybierz Stopień --</option>
+        <option>-- Wybierz Role --</option>
         @foreach ($rank as $ranks)
         <option value="{!! $ranks->id !!}"> {!! $ranks->rankName !!}</option>
          @endforeach
@@ -59,23 +59,7 @@
 
       
     
-      </div>
- 
-            </div>
-                    <br>
-                    <div class="row mt-3">
-                        <div class="col-md-12">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Admin
-                        </label>
-                        <br>
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Użytkownik
-                        </label>
-                    </div>
-                    </div>
+
                     <br>
                 <div class="row mt-3">
                     <div class="col-md-12"><label class="labels">Avatar</label><input type="file" class="form-control" placeholder="" value="" name="image"></div>
@@ -85,6 +69,8 @@
                 <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Zapisz profil</button>
                 </form></div>
             </div>
+    </div>
+        </div>
         </div>
         <div class="col-md-4">
             <div class="p-3 py-5">

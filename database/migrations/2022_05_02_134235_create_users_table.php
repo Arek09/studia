@@ -25,6 +25,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('surname');
+            $table->integer('year')->nullable();
             $table->string('email')->unique();
             $table->string('password');
             $table->string('image')->default('image.jpg');

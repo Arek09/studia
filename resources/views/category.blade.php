@@ -23,31 +23,88 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <table class="table table-bordered" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Numer broni</th>
+                                          
                                             <th>Nazwa</th>
-                                            <th>Typ/Model</th>
-                                            <th>Magazynki</th>
-                                            <th>ASG/Deko</th>
-                                            <th>Zdjęcie</th>
+                                            <th>Ilość produktów</th>
+                                            <th>Przeznaczenie</th>
+                                            <th>Wartość</th>
+                            
                                             <th>Akcja</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                        <th>Numer broni</th>
+                                        
                                             <th>Nazwa</th>
-                                            <th>Typ/Model</th>
-                                            <th>Magazynki</th>
-                                            <th>ASG/Deko</th>
-                                            <th>Zdjęcie</th>
+                                            <th>Ilość produktów</th>
+                                            <th>Przeznaczenie</th>
+                                            <th>Wartość</th>
+                            
                                             <th>Akcja</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                   
+                                        <tr>
+                                        <td>Wyroby szklane</td>
+                                        <td>5</td>
+                                        <td>Eksport</td>
+                                        <td>1.500 zł</td>
+                                        <td><img width="200px" src=""/>
+                                          
+                                                <a href="" class="btn btn-info btn-circle">
+                                                <span class="icon text-white-50">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </span>
+
+                                                </a><a href="" class="btn btn-danger btn-circle">
+                                                <span class="icon text-white-50">
+                                                    <i class="fas fa-trash"></i>
+                                                </span>
+                                                </a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Wyroby drewniane</td>
+                                                <td>15</td>
+                                                <td>Import</td>
+                                                <td>2.700 zł</td>
+                                                <td><img width="200px" src=""/>
+                                                  
+                                                        <a href="" class="btn btn-info btn-circle">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </span>
+        
+                                                        </a><a href="" class="btn btn-danger btn-circle">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-trash"></i>
+                                                        </span>
+                                                        </a></td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>Przemysł hutniczy</td>
+                                                <td>7</td>
+                                                <td>Eksport</td>
+                                                <td>500 zł</td>
+                                                <td><img width="200px" src=""/>
+                                                  
+                                                        <a href="" class="btn btn-info btn-circle">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </span>
+        
+                                                        </a><a href="" class="btn btn-danger btn-circle">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-trash"></i>
+                                                        </span>
+                                                        </a></td>
+
+
+                                            </tr>
                                     </tbody>
                                 </table>
                             </div>
